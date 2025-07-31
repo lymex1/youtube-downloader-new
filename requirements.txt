@@ -7,4 +7,5 @@ packaging==25.0
 pycryptodomex==3.23.0
 pytube==15.0.0
 sqlparse==0.5.3
+whitenoise==6.9.0
 yt-dlp==2025.7.21
