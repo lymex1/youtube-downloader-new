@@ -1,0 +1,16 @@
+{% extends "main/base.html" %}
+
+{% block content %}
+    <h1>Обработка видео...</h1>
+
+    {% if error %}
+    <p style="color:red;">Ошибка: {{ error }}</p>
+    {% elif ready %}
+    <p>Готово! Скачать:</p>
+    <a href="/media/{{ filename }}" download>Скачать видео</a>
+    {% else %}
+    <p>Пожалуйста, подождите. Видео скачивается...</p>
+    {% endif %}
+
+    <h4><a href="{% url 'main:link_form' %}">Скачать еще</a></h4>
+{% endblock %}
