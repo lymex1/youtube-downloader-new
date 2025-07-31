@@ -119,6 +119,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 ALLOWED_HOSTS = ["localhost", "youtube-downloader-new-production.up.railway.app"]
 CSRF_TRUSTED_ORIGINS = ["https://youtube-downloader-new-production.up.railway.app"]
 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 STORAGES = {
     "staticfiles": {
         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",

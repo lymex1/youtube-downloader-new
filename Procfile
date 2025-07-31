@@ -1,1 +1,1 @@
-web: gunicorn YouTubeDownload.wsgi
+web: python manage.py collectstatic && gunicorn YouTubeDownload.wsgi
