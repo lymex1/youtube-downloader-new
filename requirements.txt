@@ -1,0 +1,10 @@
+asgiref==3.9.1
+browser-cookie3==0.20.1
+Django==5.2.4
+gunicorn==23.0.0
+lz4==4.4.4
+packaging==25.0
+pycryptodomex==3.23.0
+pytube==15.0.0
+sqlparse==0.5.3
+yt-dlp==2025.7.21
