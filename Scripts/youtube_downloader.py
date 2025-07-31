@@ -1,6 +1,7 @@
 import yt_dlp
 import os
-
+from yt_dlp import YoutubeDL
+from django.conf import settings
 
 
 def download_youtube_video(url: str, output_path: str, cookie_file_path: str):    
