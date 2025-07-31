@@ -26,7 +26,7 @@ class YouTubeProcessingView(View):
         output_path = os.path.join(settings.MEDIA_ROOT, "video.mp4")
 
         try:
-            download_youtube_video(url, output_path, "/Users/egorkarinkin/Desktop/VSProjects/Django/YouTubeDownload/YouTubeDownload/cookies/www.youtube.com_cookies.txt")
+            download_youtube_video(url, output_path, "/Users/egorkarinkin/Desktop/VSProjects/Django/YouTubeDownload/YouTubeDownload/cookies.txt")
             return render(request, "main/processing.html", {"ready": True, "filename": "video.mp4"})
         except Exception as e:
             return render(request, "main/processing.html", {"error": str(e)})
