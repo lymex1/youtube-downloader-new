@@ -1,11 +1,11 @@
 from django.urls import path
 
-from .views import YouTubeDownloadView, YouTubeProcessingView
+from .views import YouTubeDownloadView, DownloadSuccessView
 
 app_name = 'main'
 
 urlpatterns = [
     path('', YouTubeDownloadView.as_view(), name='link_form'),
-    path('processing/', YouTubeProcessingView.as_view(), name='youtube_processing')
+    path("success/", DownloadSuccessView.as_view(), name="success_page"),
 ]
 

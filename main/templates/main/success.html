@@ -1,0 +1,10 @@
+{% extends "main/base.html" %}
+
+{% block content %}
+  <h2>Видео загружено!</h2>
+  <a href="{{ file_url }}" download>
+    <button>Скачать видео</button>
+  </a>
+  <br><br>
+  <a href="{% url 'main:link_form' %}">Скачать другое видео</a>
+{% endblock %}

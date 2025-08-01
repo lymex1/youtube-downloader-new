@@ -1,13 +1,11 @@
 {% extends "main/base.html" %}
 
 {% block content %}
-    <h1>Скачать видео с YouTube</h1>
-
-    <form method="POST">
-        {% csrf_token %}
-        <label for="url">Ссылка на видео:</label><br>
-        <input type="text" name="url" id="url" placeholder="https://www.youtube.com/..." required size="50">
-        <br><br>
-        <button type="submit">Скачать</button>
-    </form>
+  <h1>Скачать видео с YouTube</h1>
+  <form method="post">
+    {% csrf_token %}
+    <label for="url">Ссылка на видео:</label><br>
+    <input type="text" name="url" required size="60" placeholder="https://youtube.com/..."><br><br>
+    <button type="submit">Скачать</button>
+  </form>
 {% endblock %}
